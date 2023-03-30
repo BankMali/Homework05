@@ -243,3 +243,135 @@ color: #21243D;
 
     color: #21243D;
 }
+
+/* Feature //////////////// */
+
+
+.featureCon {
+
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+}
+
+.featurecenter {
+    width: 860px;
+    /* background-color: #FF6464; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.featureinfocard {
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+    /* border: 1px solid gray; */
+    /* border-radius: 4px; */
+    /* background: #FFFFFF; */
+    /* box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25); */
+    display: flex;
+    flex-flow: row wrap;
+  border-bottom: 1px solid #E0E0E0;
+
+}
+
+.featureinfo1 {
+    /* background-color: red; */
+    width: fit-content;
+}
+
+.featureinfo2 {
+  /* display: flex; */
+  width: 60%;
+  padding: 0px 0px 0px 20px;
+  height: 100%;
+  /* background-color: red; */
+  justify-content: flex-end;
+}
+
+/* Feature Text detail /////////// */
+
+.featuretext {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 0px;
+  /* width: 50%; */
+  /* background: red; */
+}
+
+.featureinfo2> h3 {
+  font-family: 'Heebo';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 44px;
+}
+
+.featureinfo2> div> h4 {
+  font-family: 'Heebo';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 25px;
+color: white;
+background: #142850;
+border-radius: 16px;
+width: 60px;
+height: 25px;
+text-align: center;
+}
+
+.featureinfo2> div> h5 {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  width: 150px;
+  /* background-color: red; */
+  /* Light */
+  color: #8695A4;
+  padding: 0px 0px 0px 25px;
+}
+
+/* Footer ///////// */
+
+.footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  height: 200px;
+  
+  
+}
+
+.footerIcon {
+  display: inline;
+  /* flex-flow: row nowrap; */
+  /* background-color: blue; */
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  text-align: center;
+  width: 50%;
+}
+
+.footer> .footerIcon>svg {
+  /* background-color: rgb(13, 128, 146); */
+  width: 30px;
+  margin: 14px;
+  
+}
+
+.footerIcon> svg {
+  margin: 20px;
+}
+.fonterAwasome {
+  
+}
