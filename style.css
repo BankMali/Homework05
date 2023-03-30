@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background: darkgray;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-size: 15px; */
+    /* line-height: 1.5; */
+    font-family: 'Heebo';
+  }
+
+  body {
+    /* max-width: 860px; */
+    /* how max width of body, nerver big more than XXXpx */
+    background: lightblue;
+    margin: auto;
+    /* justify-content: center; */
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  /* color code */
+  /* #FF6464  pink */
+
+  /* Header ///////////////// */
+
+  header {
+    /* background: #87cfeba8; */
+    color: black;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    /* border-bottom: 3px solid salmon; */
+  }
+
+  header .container {
+    justify-content: flex-end;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  header li {
+    padding: 0 15px;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  header a {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    font-size: 20px;
+    color: inherit;
+    /* inherit = link color from before */
+  }
+
+  header a:hover {
+    color: #FF6464;
+    /* font-weight: bold; */
+  }
+
+  header .branding span {
+    color: deeppink;
+  }
+
+  /* ///  ALL Container   ////////////////// */
+
+.allContainer {
+    display: flex;
+    flex-flow: row wrap;
+    /* background-color: red; */
+    color: black;
+    /* width: 100%; */
+    /* min-height: 600px; */
+    /* min-width: 860px; */
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+    /* max-width: 860px; */
+
+}
+
+
+
+.profile {
+    /* background: #32718aa8; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    max-width: 860px;
+    /* for responsive */
+    /* justify-content: center; */
+    justify-content: space-between;
+    padding: 80px 20px;
+  }
+
+  .profile1 {
+    max-width: 60%;
+    margin: 0px 0px 20px 0px;
+    
+  }
+
+.profile1 > * {
+    margin-top: 20px;
+}
+
+.profile1 > .h11 {
+    font-size: 44px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    /* color: red; */
+}
+
+.profile1 > button {
+    background-color: #FF6464;
+    color: white;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.profile2 {
+    margin: 0px 0px 20px 0px;
+    /* padding: 0px 20px; */
+    /* display: flex; */
+    /* background-color: blueviolet; */
+}
+
+.blog {
+    background-color: red;
+    display: flex;
+    flex-flow: row wrap;
+    width: 860px;
+
+    
+}
+
+.blogRecent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+    align-items: baseline;
+    font-size: 22px;
+line-height: 60px;
+    /* padding: 10px px; */
+}
+
+.blogRecent > a {
+    font-size: 16px;
+line-height: 24px;
+text-decoration: none;
+
+/* Secondry */
+
+color: #00A8CC;
+}
+
+.bloginfo {
+    width: 100%;
+    background-color: #EDF7FA;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+}
+
+.blogCenter {
+    width: 860px;
+    /* background-color: #FF6464; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.blogcard {
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
+    width: 400px;
+    /* border: 1px solid gray; */
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    
+    /* background-color: red; */
+}
+
+.blogdate {
+    width: 275px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+/* Dark Color */
+
+color: #21243D;
+}
+
+
+.blogcard > h3 {
+    font-family: 'Heebo';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 38px;
+
+/* Dark Color */
+
+color: #21243D;
+}
+
+.blogcard > p {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+/* Dark Color */
+
+    color: #21243D;
+}
