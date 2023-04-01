@@ -6,14 +6,11 @@
 
 html {
     background: darkgray;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-size: 15px; */
-    /* line-height: 1.5; */
     font-family: 'Heebo';
   }
 
   body {
-    /* max-width: 860px; */
+    min-width: 375px;
     /* how max width of body, nerver big more than XXXpx */
     background: lightblue;
     margin: auto;
@@ -95,12 +92,12 @@ html {
 
 }
 
-
+/* ProFile ///////////////////////////// */
 
 .profile {
     /* background: #32718aa8; */
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap-reverse;
     align-items: center;
     max-width: 860px;
     /* for responsive */
@@ -339,7 +336,7 @@ text-align: center;
   padding: 0px 0px 0px 25px;
 }
 
-/* Footer ///////// */
+/* Footer //////////////////////////////// */
 
 .footer {
   display: flex;
@@ -354,24 +351,28 @@ text-align: center;
 
 .footerIcon {
   display: inline;
-  /* flex-flow: row nowrap; */
-  /* background-color: blue; */
-  /* align-items: center; */
-  /* justify-content: space-evenly; */
   text-align: center;
-  width: 50%;
+  width:100%;
 }
 
 .footer> .footerIcon>svg {
   /* background-color: rgb(13, 128, 146); */
   width: 30px;
-  margin: 14px;
+  margin: 16px;
   
 }
 
-.footerIcon> svg {
-  margin: 20px;
+.footer> p {
+  margin-top: 5px;
+  font-size: 13px;
 }
-.fonterAwasome {
-  
+
+/* Hover ////////////////// */
+
+.profile1>button:hover {
+  background: #f85353;
+}
+
+.blogRecent> a:hover {
+  text-decoration: underline;
 }
