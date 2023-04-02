@@ -5,16 +5,19 @@
 }
 
 html {
-    background: darkgray;
+    background: white;
     font-family: 'Heebo';
+    /* display: flex; */
+    /* overflow: hidden; */
+    /* justify-content: center; */
   }
 
   body {
-    min-width: 375px;
+    /* min-width: 300px; */
     /* how max width of body, nerver big more than XXXpx */
     background: lightblue;
-    margin: auto;
-    /* justify-content: center; */
+    /* margin: 100%; */
+    justify-content: center;
   }
 
 header {
@@ -119,14 +122,14 @@ header {
     align-items: center;
     max-width: 860px;
     /* for responsive */
-    justify-content: center;
-    /* justify-content: space-between; */
-    padding: 80px 20px;
+    /* justify-content: center; */
+    justify-content: space-between;
+    padding: 80px 0px;
   }
 
   .profile1 {
-    max-width: 60%;
-    margin: 0px 0px 20px 0px;
+    /* max-width: 60%; */
+    /* margin: 0px 0px 20px 0px; */
     /* text-align: center; */
     
   }
@@ -282,8 +285,18 @@ color: #21243D;
 
 }
 
+.featurecenter_Blog {
+    width: 60%;
+    min-width: 400px;
+    /* background-color: #FF6464; */
+    /* display: flex; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
 .featureinfocard {
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0px 0px 20px 0px;
     width: 100%;
     /* border: 1px solid gray; */
@@ -293,6 +306,7 @@ color: #21243D;
     display: flex;
     flex-flow: row wrap;
   border-bottom: 1px solid #E0E0E0;
+  /* min-width: 460px; */
 
 }
 
@@ -466,7 +480,7 @@ nav ul li a:focus {
   display: none;
 }
 
-@media (max-width: 695px) {
+@media (max-width: 859px) {
   .buttonResponsive {
     display: block;
     /* position: sticky 12px; */
@@ -475,14 +489,23 @@ nav ul li a:focus {
   .navFull-Hide {
     display: block;
     /* position: sticky 12px; */
+    margin-top: -40px;
+    background-color: rgba(255, 255, 255, 0.95);
   }
   .navFull {
     display: none;
   }
+.profile {
+  justify-content: center;
+}
+
   .profile1 {
     width: 100%;
     justify-content: center;
     text-align: center;
+    /* justify-content: space-between; */
+    padding: 10px 20px;
+    margin-top: -30px;
   }
   .blogRecent > a {
     display: none;
@@ -491,19 +514,29 @@ nav ul li a:focus {
     justify-content: center;
   }
 
+  .blogcard {
+    /* padding: 20px;
+    margin: 0px 5px 20px 5px; */
+    width: 100%;
+}
+
   .featurecenter {
+    /* justify-content: center; */
+  }
+  .featurecenter_Blog {
     justify-content: center;
+    width: 100%;
   }
   .featureinfocard {
     justify-content: center;
   }
   .featureinfo2 {
     width: 100%;
-    max-width: 430px;
+    /* max-width: 430px; */
   }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 860px) {
   nav {
     position: relative;
     top: -10px;
@@ -528,5 +561,11 @@ nav ul li a:focus {
 
   .buttonResponsive {
     display: none;
+  }
+  .profile1 {
+    max-width: 60%;
+    /* margin: 0px 0px 20px 0px; */
+    /* text-align: center; */
+    
   }
 }
