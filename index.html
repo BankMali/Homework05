@@ -34,13 +34,21 @@
       <!-- header //////////////////////// -->
       <header>
         <div class="container">
-          <nav>
+          <!-- <div class="container"> -->
+          <nav class="navFull" id="myTopnav">
             <ul>
               <li class="current"><a href="#">Works</a></li>
               <li><a href="./about.html">Blog</a></li>
               <li><a href="./services.html">Contact</a></li>
             </ul>
           </nav>
+          <a
+            href="javascript:void(0);"
+            style="font-size: 40px; text-decoration: none; color: black"
+            class="buttonResponsive"
+            onclick="myFunction()"
+            >&#9776;</a
+          >
         </div>
       </header>
 
@@ -194,5 +202,15 @@
       <p>Copyright ©2020 All rights reserved</p>
     </div>
     <script src="style.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navFull") {
+          x.className += "-Hide";
+        } else {
+          x.className = "navFull";
+        }
+      }
+    </script>
   </body>
 </html>

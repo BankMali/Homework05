@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      header {
+        height: 70px;
+        /* background-color: #22292f; */
+        padding: 10px 0;
+      }
+      .buttonResponsive {
+        /* background-color: red; */
+      }
+      .menu-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        /* background-color: #eb6f4a; */
+      }
+
+      .logo-img {
+        height: 50px;
+      }
+      .menu-icon {
+        font-size: 20px;
+        color: #050404;
+        line-height: 50px;
+      }
+
+      nav {
+        position: absolute;
+        background-color: #f8f8f8ba;
+        top: 50px;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul li {
+        padding: 0 15px;
+      }
+      nav ul li a {
+        display: inline-block;
+        padding: 12px;
+        /* Add your custom styles below to change appearance of links */
+        color: black;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+      }
+
+      nav ul li a:hover,
+      nav ul li a:focus {
+        color: #eb6f4a;
+        /* background-color: #eb6f4a; */
+        width: 100%;
+      }
+      /* ////////////// */
+
+      #checkbox {
+        display: none;
+      }
+
+      #checkbox:checked ~ nav ul {
+        max-height: 200px;
+        padding: 15px 0;
+        transition: all 0.5s;
+      }
+
+      .navFull {
+        display: block;
+      }
+
+      .navFull-Hide {
+        display: none;
+      }
+
+      @media (min-width: 768px) {
+        .buttonResponsive {
+          display: block;
+        }
+        .navFull-Hide {
+          display: block;
+        }
+        .navFull {
+          display: block;
+        }
+      }
+
+      @media (min-width: 768px) {
+        nav {
+          position: relative;
+          top: -10px;
+          background-color: transparent;
+        }
+        nav ul {
+          max-height: 70px;
+          padding: 15px 0;
+          text-align: right;
+        }
+        nav ul li {
+          display: inline-flex;
+          padding-left: 20px;
+        }
+        /* .navFull-Hide {
+          display: none;
+        }
+        .navFull {
+          display: block;
+        } */
+        .buttonResponsive {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-wrap">
+      <!-- <div class="menu-wrap"> -->
+      <!-- <img src="logo.png" class="logo-img" alt="Logo" /> -->
+      <p></p>
+      <nav class="navFull" id="myTopnav">
+        <ul>
+          <li class="current"><a href="#">Works</a></li>
+          <li><a href="./about.html">Blog</a></li>
+          <li><a href="./services.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 40px; text-decoration: none; color: black"
+        class="buttonResponsive"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navFull") {
+          x.className += "-Hide";
+        } else {
+          x.className = "navFull";
+        }
+      }
+    </script>
+  </body>
+</html>
